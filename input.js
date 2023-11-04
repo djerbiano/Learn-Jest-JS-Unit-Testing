@@ -22,6 +22,10 @@ function filterName(name) {
   if (name.startsWith("_")) {
     return name.trim().slice(1);
   }
+  if (name === "o2") {
+    throw new Error("Name cannot be o2");
+  }
+  
   return name;
 }
 
